@@ -1,0 +1,103 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: UTMSignwriter;
+    src: url(../Contents/Fonts/UTM\ A&S\ Signwriter.ttf);
+}
+@font-face{
+    font-family: SVN-Nexa;
+    src: url(../Contents/Fonts/SVN-Nexa\ Light_0.otf);
+}
+.navbar {
+    font-family: SVN-Nexa;
+}
+.main-section {
+    background-image: url('../Contents/Images/main-picture.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+}
+    .main-section .bg-grey {
+        background-color: black;
+        opacity: 0.6;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+    .main-section .welcome-title {
+        padding: 178px 0px;
+    }
+            .main-section .welcome-title .hello-title {
+                font-family: SVN-Nexa;
+                font-size: 30px;
+                margin-bottom: -10px;
+            }
+            .main-section .welcome-title .name-title{
+                font-family: UTMSignwriter;
+                font-size: 85px;
+            }
+            .main-section .welcome-title .job-title {
+                font-family: SVN-Nexa;
+                font-size: 35px;
+                margin-top: -10px;
+            }
+        .main-section .welcome-title .social-icon {
+            margin: 10px 0px;
+        }
+            .main-section .welcome-title .social-icon a {
+                color: #fff;
+                padding: 0px 20px;
+                font-size: 25px;
+                text-decoration: none;
+            }
+                .main-section .welcome-title .social-icon a:hover {
+                    color: rgb(247, 206, 26);
+                    transition: all 0.5s;
+                }
+        .main-section .welcome-title .start-button {
+            margin-top: 20px;
+        }
+            .main-section .welcome-title .start-button .btn {
+                border-radius: 0px;              
+                color: #fff;
+                border-color: #fff;
+                text-transform: uppercase;
+                padding: 8px 25px;
+            }
+            .main-section .welcome-title .start-button .btn:hover {
+                color: #000;
+            }
+.information-section {
+    padding: 20px 0px;
+}
+    .information-section .avatar {
+        box-shadow: rgba(0, 0, 0, 0.205) 0px 0px 30px;
+        padding: 5px;
+        border: 1px solid #fff;
+    }
+        .information-section .avatar .card-img-top {
+            border-radius: none;
+        }
+    .information-section .skill-section {
+
+    }
+        .information-section .skill-section .skill-title {
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        .information-section .skill-section .skill-item {
+            padding-bottom: 20px;
+        }
+            .information-section .skill-section .label {
+                width: 250px;          
+            }
+                .information-section .skill-section .label .icon {
+                    width: 30px;
+                }
+            .information-section .skill-section .progress {
+                height: 20px;
+            }
