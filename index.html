@@ -7,6 +7,7 @@
     <title>MC Mộc Miên</title>
     <link href="./CSS/bootstrap.min.css" rel="stylesheet"></link>
     <link href="./CSS/index.css" rel="stylesheet"></link>
+    <link href="./CSS/timeline.css" rel="stylesheet"></link>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
@@ -18,11 +19,11 @@
                     aria-expanded="false" aria-label="Toggle navigation"></button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="#">Thông tin cá nhân</a>
+                                <a class="nav-link" href="#information-section">Thông tin cá nhân</a>
                             </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Học vấn</a>
@@ -38,7 +39,7 @@
             </div>
         </nav>
         </div>
-    </div>
+    </header>
     <div class="main-section">
         <div class="bg-grey">          
         </div>
@@ -61,7 +62,7 @@
                             </a>
                         </div>
                         <div class="start-button">
-                                <button class="btn btn-outline-light">
+                                <button class="btn btn-outline-light" id="btnStart">
                                     Bắt đầu
                                 </button>
                             </div>
@@ -70,7 +71,7 @@
             </div>
         </div>
     </div>
-    <div class="information-section">
+    <div id="information-section">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-4">
@@ -168,7 +169,80 @@
                 </div>
             </div>
         </div>
+        </div>
+    </div>
+    <div class="container">
+        <hr>
+    </div>
+    <div id="education-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="education wow fadeInRight">
+                            <ul class="timeline">
+                                <li>
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <h2 class="timeline-title">Học vấn</h2>
+                                </li>
+                                <li>
+                                    <div class="content-text">
+                                        <h3 class="line-title">Khoa Phát thanh Truyền hình - Học viện Báo chí Tuyên truyền</h3>
+                                        <span>2016 - 2020</span>
+                                        <!-- <p class="line-text"></p> -->
+                                    </div>
+                                </li>                          
+                                <li>
+                                    <div class="content-text">
+                                        <h3 class="line-title">THPT Nguyễn Gia Thiều</h3>
+                                        <span>2013 - 2016</span>
+                                        <!-- <p class="line-text"></p> -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content-text">
+                                        <h3 class="line-title">THCS Ngọc Thụy</h3>
+                                        <span>2012 - 2016</span>
+                                        <!-- <p class="line-text"></p> -->
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="experience wow fadeInRight">
+                            <ul class="timeline">
+                                <li>
+                                    <i class="fas fa-briefcase"></i>
+                                    <h2 class="timeline-title">Kinh nghiệm</h2>
+                                </li>
+                                <li>
+                                    <div class="content-text">
+                                        <h3 class="line-title">Phó Chủ nhiệm Câu lạc bộ AMC - CLB MC Học viện Báo chí Tuyên truyền</h3>
+                                        <span>2018 - hiện tại</span>
+                                        <!-- <p class="line-text"></p> -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content-text">
+                                        <h3 class="line-title">MC các chương trình Truyền hình</h3>
+                                        <span>2017 - hiện tại</span>
+                                        <p class="line-text">Các chương trình Truyền hình trải nghiệm: SVietnam (VTV1), Dặm dài Đất nước (VTV3), Tìm về nguồn cội (HN1)</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content-text">
+                                        <h3 class="line-title">MC Sự kiện các chương trình</h3>
+                                        <span>2016 - hiện tại</span>
+                                        <!-- <p class="line-text"></p> -->
+                                    </div>
+                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
     <script link="./Scripts/jquery-3.2.1.min.js"></script>
+    <script link="./Scripts/index.js"></script>
 </body>
 </html>

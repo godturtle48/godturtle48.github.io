@@ -71,33 +71,51 @@ body, html {
             .main-section .welcome-title .start-button .btn:hover {
                 color: #000;
             }
-.information-section {
+#information-section {
     padding: 20px 0px;
 }
-    .information-section .avatar {
+    #information-section .avatar {
         box-shadow: rgba(0, 0, 0, 0.205) 0px 0px 30px;
         padding: 5px;
         border: 1px solid #fff;
     }
-        .information-section .avatar .card-img-top {
+        #information-section .avatar .card-img-top {
             border-radius: none;
         }
-    .information-section .skill-section {
+    #information-section .open-name-title {
+        font-weight: 700;
+        font-size: 30px;
+    }
+    #information-section .skill-section {
 
     }
-        .information-section .skill-section .skill-title {
+        #information-section .skill-section .skill-title {
             text-transform: uppercase;
             font-weight: 800;
         }
-        .information-section .skill-section .skill-item {
+        #information-section .skill-section .skill-item {
             padding-bottom: 20px;
         }
-            .information-section .skill-section .label {
+            #information-section .skill-section .label {
                 width: 250px;          
             }
-                .information-section .skill-section .label .icon {
+                #information-section .skill-section .label .icon {
                     width: 30px;
                 }
-            .information-section .skill-section .progress {
+            #information-section .skill-section .progress {
                 height: 20px;
             }
+#education-section {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+/* #education-section .container {
+    background-color: #fff; 
+    box-shadow: rgba(0, 0, 0, 0.205) 0px 0px 30px;
+} */
+    #education-section .education-title {
+        font-weight: 700;
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    
