@@ -21,12 +21,22 @@ $(function(){
     })
     $(window).scroll(function(){
         if($(window).scrollTop() > 50) {
-            $('.navbar').addClass("white-bg");
-            $('.nav-item').addClass("black-text");
+            $('.navbar').css("background-color","white");
+            $('.navbar-toggler span').css("background-color","#444");
+            $('.nav-link, .navbar-brand').css("color","black");
+            // $('.navbar-toggler').css("border-color","black");
         } else {
             //remove the background property so it comes transparent again (defined in your css)
-            $(".navbar").removeClass("white-bg");
-            $(".nav-item").removeClass("black-text");
+            $(".navbar").css("background-color","");
+            $('.navbar-toggler span').css("background-color","#fff");
+            $('.nav-link, .navbar-brand').css("color","white");
+            // $('.navbar-toggler').css("border-color","white");
         }
     })
+    $('.nav-link').click(function(){
+        $('.navbar-toggler').trigger('click');
+    })
+    // $('.navbar-toggler-icon').click(function(){
+
+    // })
 })
