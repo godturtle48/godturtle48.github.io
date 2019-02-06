@@ -34,7 +34,7 @@ $(function(){
         $('.navbar-toggler').trigger('click');
     })
 
-    const $menu = $('#collapsibleNavId');
+    const $menu = $('.navbar-toggler span');
     $(document).mouseup(function (e) {
     if (!$menu.is(e.target) // if the target of the click isn't the container...
     && $menu.has(e.target).length === 0) // ... nor a descendant of the container
