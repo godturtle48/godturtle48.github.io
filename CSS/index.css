@@ -153,6 +153,9 @@ hr {
         font-weight: 700;
         font-size: 30px;
     }
+    #information-section .detail-cv {
+        margin-bottom: 15px;
+    }
     #information-section .skill-section {
 
     }
