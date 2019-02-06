@@ -2,6 +2,9 @@ body, html {
     margin: 0px;
     padding: 0px;
 }
+hr {
+    margin-bottom: 0px;
+}
 @font-face {
     font-family: UTMSignwriter;
     src: url(../Contents/Fonts/UTM\ A&S\ Signwriter.ttf);
@@ -135,13 +138,16 @@ body, html {
 #information-section {
     padding: 20px 0px;
 }
+    #information-section .info-content {
+        padding: 40px 0px;
+    }
     #information-section .avatar {
         box-shadow: rgba(0, 0, 0, 0.205) 0px 0px 30px;
         padding: 5px;
         border: 1px solid #fff;
     }
         #information-section .avatar .card-img-top {
-            border-radius: none;
+            border-radius: 0px;
         }
     #information-section .open-name-title {
         font-weight: 700;
@@ -174,15 +180,81 @@ body, html {
     background-color: #fff; 
     box-shadow: rgba(0, 0, 0, 0.205) 0px 0px 30px;
 } */
-    #education-section .education-title {
-        font-weight: 700;
-        font-size: 30px;
-        padding-bottom: 20px;
+    #education-section .education, #education-section .experience {
+        padding: 45px 0px;
     }
+    
 footer {
     background-color: #000;
     color: #fff;
     padding-top: 12px;
     font-size: 12px;
 }
- 
+@-webkit-keyframes bounceInRight { 
+    0% { 
+        opacity: 0;        
+        -webkit-transform: translateX(400px); 
+    } 
+    60% {       
+        -webkit-transform: translateX(-30px); 
+    } 
+    80% { 
+        -webkit-transform: translateX(10px); 
+    } 
+    100% {
+        opacity: 1;  
+        -webkit-transform: translateX(0); 
+    } 
+} 
+
+@keyframes bounceInRight { 
+    0% { 
+        opacity: 0; 
+        transform: translateX(400px); 
+    } 
+    60% { 
+        transform: translateX(-30px); 
+    } 
+    80% { 
+        transform: translateX(10px); 
+    } 
+    100% {
+    opacity: 1;
+        transform: translateX(0); 
+    } 
+} 
+@-webkit-keyframes fadeInRight { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateX(400px); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateX(0); 
+    } 
+} 
+@keyframes fadeInRight { 
+    0% { 
+        opacity: 0; 
+        transform: translateX(400px); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateX(0); 
+    } 
+} 
+.fadeInRight{ 
+    /* opacity: 0;  */
+    /* -webkit-transform: translateX(400px); 
+    transform: translateX(400px); */
+    -webkit-animation-name: fadeInRight; 
+    animation-name: fadeInRight; 
+    animation-duration: 1s;
+}
+
