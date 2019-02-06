@@ -175,6 +175,9 @@ hr {
             #information-section .skill-section .progress {
                 height: 20px;
             }
+                #information-section .skill-section .progress .progress-bar {
+                    background-color: #00b4d9;
+                }
 #education-section {
     background-color: #ffffff;
     padding: 10px 0;
