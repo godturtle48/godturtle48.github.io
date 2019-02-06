@@ -31,7 +31,9 @@ $(function(){
         }
     })
     $('.nav-link').click(function(){
-        $('.navbar-toggler').trigger('click');
+        $('.navbar-collapse').removeClass('show');
+        $('.navbar-toggler').addClass('collapsed');
+        $('.navbar-toggler').attr('aria-expanded','false');
     })
 
     const $menu = $('.navbar-toggler');
