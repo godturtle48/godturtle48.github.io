@@ -15,7 +15,7 @@ $(function(){
         $("html,body").animate({scrollTop:$('#education-section').offset().top});
         return false;
     })
-    $('#btnTop').click(function () {
+    $('#btnTop, .navbar-brand').click(function () {
         $("html,body").animate({scrollTop:0});
         return false;
     })
