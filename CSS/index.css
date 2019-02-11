@@ -88,7 +88,7 @@ hr {
         background-color: black;
         opacity: 0.6;
         position: absolute;
-        height: 100%;
+        height: 100vh;
         width: 100%;
         top: 0;
     }
@@ -156,6 +156,17 @@ hr {
     #information-section .detail-cv {
         margin-bottom: 15px;
     }
+        #information-section .detail-cv #detail-cv-button {
+            background-color: #FAC921;
+            border-color:  #FAC921;
+            color: #fff;
+            border-radius: 0px;
+        }
+        #information-section .detail-cv #detail-cv-button:hover {
+            color: #FAC921;
+            background-color: #000;
+            border-color: #000;
+        }
     #information-section .skill-section {
 
     }
@@ -176,7 +187,7 @@ hr {
                 height: 20px;
             }
                 #information-section .skill-section .progress .progress-bar {
-                    background-color: #00b4d9;
+                    background-color:  #FAC921;
                 }
 #education-section {
     background-color: #ffffff;
@@ -189,13 +200,37 @@ hr {
     #education-section .education, #education-section .experience {
         padding: 45px 0px;
     }
-    
+
+#images-section .timeline {
+    margin: 35px 0px;
+}
+    #images-section img {
+        width: 100%;
+        height: 230px;
+    }
 footer {
     background-color: #000;
     color: #fff;
     padding-top: 12px;
     font-size: 12px;
 }
+footer .social-icon {
+    margin: 5px 0px;
+}
+    footer .title-social-footer {
+        margin-bottom: 5px;
+    }
+    footer .social-icon a {
+        color: #fff;
+        padding-left: 15px;
+        font-size: 20px;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+        footer .social-icon a:hover {
+            color: rgb(247, 206, 26);
+            transition: all 0.5s;
+        }
 @-webkit-keyframes bounceInRight { 
     0% { 
         opacity: 0;        
@@ -264,3 +299,45 @@ footer {
     animation-duration: 1s;
 }
 
+.owl-carousel {
+    margin-bottom: 40px;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    background: transparent;
+}
+
+.owl-theme .owl-nav {
+    position: relative;
+    bottom: 140px;
+}
+
+.owl-prev {
+    position: absolute;
+    left: -30px;
+}
+
+.owl-next {
+    position: absolute;
+    right: -30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: #e09422;
+    width: 30px;
+    transition: all 0.5s;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #e09422;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px){
+    footer .social-icon, footer .title-social-footer {
+        text-align: left!important;
+    }
+    footer .social-icon a {
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+}
