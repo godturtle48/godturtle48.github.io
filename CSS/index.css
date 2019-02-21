@@ -83,6 +83,7 @@ hr {
     background-position: center;
     height: 100vh;
     color: #fff;
+    min-height: 313px;
 }
     .main-section .bg-grey {
         background-color: black;
@@ -91,9 +92,11 @@ hr {
         height: 100vh;
         width: 100%;
         top: 0;
+        min-height: 313px;
     }
     .main-section .welcome-title {
-        padding: 178px 0px;
+        /* padding: 178px 0px; */
+        padding-top: calc(50vh - 156px);
     }
             .main-section .welcome-title .hello-title {
                 font-family: SVN-Nexa;
